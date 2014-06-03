@@ -1,0 +1,35 @@
+# Core Files       #
+####################
+/errors/local.xml
+/app/etc/local.xml
+
+# Downloader       #
+####################
+/downloader/.cache
+/downloader/cache.cfg
+/downloader/connect.cfg
+
+# Media Files      #
+####################
+/media/**/*
+!/media/.htaccess
+!/media/**/.htaccess
+
+# Temporary Files  #
+####################
+/var/**/*
+!/var/.htaccess
+!/var/**/.htaccess
+/var/resource_config.json
+
+# System Files     #
+####################
+/.buildpath
+/.project
+/.modgit/
+/nbproject/
+.DS_Store
+.sass-cache
+.idea
+/shell/netaya/data/
+/shell/netaya/sourse/img/
