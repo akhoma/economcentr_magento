@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @category    Ec
+ * @package     Ec_Install
+ */
+-->
+<config>
+    <modules>
+        <Ec_Install>
+            <version>1.0.</version>
+        </Ec_Install>
+    </modules>
+    <global>
+        <resources>
+            <ec_install_setup>
+                <setup>
+                    <module>Ec_Install</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </ec_install_setup>
+        </resources>
+    </global>
+</config>
