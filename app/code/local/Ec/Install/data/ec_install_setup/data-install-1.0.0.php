@@ -1,3 +1,4 @@
 <?php
-
-exit("zzzzzzzzzzzzzzzz");
+/**
+ * EEc install init
+ */
