@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tukish_CmsHierarchy>
+            <active>false</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml/>
+                <Mage_Catalog/>
+                <Mage_Cms/>
+            </depends>
+        </Tukish_CmsHierarchy>
+    </modules>
+</config>
