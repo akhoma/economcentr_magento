@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Dev2k_CmsNavigation>
+            <version>1.0.0</version>
+        </Dev2k_CmsNavigation>
+    </modules>
+    <global>
+        <models>
+            <dev2k_cmsnavigation>
+                <class>Dev2k_CmsNavigation_Model</class>
+            </dev2k_cmsnavigation>
+        </models>
+        <blocks>
+            <dev2k_cmsnavigation>
+                <class>Dev2k_CmsNavigation_Block</class>
+            </dev2k_cmsnavigation>
+            <page>
+                <rewrite>
+                    <html_topmenu>Dev2k_CmsNavigation_Block_Html_Topmenu</html_topmenu>
+                </rewrite>
+            </page>
+        </blocks>
+        <resources>
+            <dev2k_cmsnavigation_setup>
+                <setup>
+                    <module>Dev2k_CmsNavigation</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </dev2k_cmsnavigation_setup>
+        </resources>
+    </global>
+</config>
