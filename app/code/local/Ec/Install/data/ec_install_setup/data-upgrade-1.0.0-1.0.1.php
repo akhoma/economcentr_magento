@@ -15,7 +15,6 @@ $storeGroupDefault->setName('Default')
 //Create Stores
 $storesEurope = array(
     'uk_ua'    => 'Ukraine | Українська',
-    'ru'    => 'Russian | Руccкий',
 );
 
 $website = Mage::getModel('core/website')->load($websiteId);

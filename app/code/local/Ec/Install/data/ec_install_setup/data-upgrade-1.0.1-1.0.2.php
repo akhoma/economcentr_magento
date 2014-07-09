@@ -15,8 +15,10 @@ foreach ($stores as $store) {
         case 'uk_ua':
             $config->saveConfig('general/locale/code', 'uk_UA', 'stores', $store->getId());
             break;
-        case 'ru':
+        case 'default':
             $config->saveConfig('general/locale/code', 'ru_RU', 'stores', $store->getId());
+            $store->setName('Russian | Руccкий')
+                ->save();
             break;
     }
 }
