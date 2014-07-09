@@ -22,4 +22,24 @@
             </ec_install_setup>
         </resources>
     </global>
+    <default>
+        <design>
+            <theme>
+                <locale>ec</locale>
+                <template>ec</template>
+                <skin>ec</skin>
+                <layout>ec</layout>
+                <default>ec</default>
+            </theme>
+            <head>
+                <default_title>Hästens</default_title>
+            </head>
+            <header>
+                <logo_alt>Hästens</logo_alt>
+            </header>
+            <footer>
+                <copyright>&amp;copy; 2014 Hästens Sängar AB. All rights reserved.</copyright>
+            </footer>
+        </design>
+    </default>
 </config>
