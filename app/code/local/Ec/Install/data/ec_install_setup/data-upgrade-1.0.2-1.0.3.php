@@ -29,3 +29,16 @@ $titleUa = 'Ми розташовані';
 $blockIdUa = $this->setCmsBlock($identifierUa, $titleUa, $contentUa, true, array($storeIdUa));
 
 
+$contentRu = <<< HTML
+{{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}
+HTML;
+$identifierRu = 'contacts_ru';
+$titleRu = 'Контакти';
+$blockIdRu = $this->setCmsBlock($identifierRu, $titleRu, $contentRu, true, array($storeIdRu));
+
+$contentUa = <<< HTML
+{{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}
+HTML;
+$identifierUa = 'contacts_ua';
+$titleUa = 'Контакти';
+$blockIdUa = $this->setCmsBlock($identifierUa, $titleUa, $contentUa, true, array($storeIdUa));
