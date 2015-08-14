@@ -32,14 +32,23 @@
                 <default>ec</default>
             </theme>
             <head>
-                <default_title>Hästens</default_title>
+                <default_title>Econom-Centr</default_title>
             </head>
             <header>
-                <logo_alt>Hästens</logo_alt>
+                <logo_alt>Econom-Centr</logo_alt>
             </header>
             <footer>
-                <copyright>&amp;copy; 2014 Hästens Sängar AB. All rights reserved.</copyright>
+                <copyright>www.econom-centr.com.ua - 2kish Development</copyright>
             </footer>
         </design>
     </default>
+    <frontend>
+        <layout>
+            <updates>
+                <ec_install>
+                    <file>ec/install.xml</file>
+                </ec_install>
+            </updates>
+        </layout>
+    </frontend>
 </config>
