@@ -131,7 +131,7 @@ class Mage_Shell_Import_Products extends Mage_Shell_Abstract
                 ->setCategoryIds(array(2,3)); //assign product to categories
 
 
-                if ($productData['image1']) {
+                if ($productData['image']) {
                     $product->setMediaGallery (array('images'=>array (), 'values'=>array ())) //media gallery initialization
                         ->addImageToMediaGallery(dirname(__FILE__) . DS . self::IMAGES_PATH . DS . $productData['image'], array('image','thumbnail','small_image'), false, false);
                 }
