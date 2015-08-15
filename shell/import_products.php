@@ -73,10 +73,20 @@ class Mage_Shell_Import_Products extends Mage_Shell_Abstract
         $dataArray = xmlstr_to_array($data);
 
         $products = array();
+        $defaultProductSku = 50000;
         foreach ($dataArray['node'] as $node) {
+
+            $productData['sku'] = $node['field_product_sku']['und']['n0']['value'];
+            $existProduct = Mage::getModel('catalog/product')->loadByAttribute('sku', $productData['sku']);
+            while (!$productData['sku'] || $existProduct) {
+                $productData['sku'] = $defaultProductSku;
+                $existProduct = Mage::getModel('catalog/product')->loadByAttribute('sku', $productData['sku']);
+                $defaultProductSku++;
+            }
+
+
             $productData['title'] = $node['title'];
             $productData['description'] = '&nbsp;';
-            $productData['sku'] = $node['field_product_sku']['und']['n0']['value'];
             $price = $node['field_product_price']['und']['n0']['value'];
             $productData['price'] =  $price ? $price : 0;
             $productData['image'] = $node['field_product_image']['und']['n0']['filename'];
@@ -121,7 +131,7 @@ class Mage_Shell_Import_Products extends Mage_Shell_Abstract
                 ->setCategoryIds(array(2,3)); //assign product to categories
 
 
-                if ($productData['image']) {
+                if ($productData['image1']) {
                     $product->setMediaGallery (array('images'=>array (), 'values'=>array ())) //media gallery initialization
                         ->addImageToMediaGallery(dirname(__FILE__) . DS . self::IMAGES_PATH . DS . $productData['image'], array('image','thumbnail','small_image'), false, false);
                 }
@@ -129,8 +139,8 @@ class Mage_Shell_Import_Products extends Mage_Shell_Abstract
             $product->save();
             echo $productData['sku'] . ': imported' . PHP_EOL ;
         } catch (Exception $e) {
-            Mage::log($e->getMessage());
-            echo PHP_EOL . $productData['sku'] . ': ' . $e->getMessage() . PHP_EOL . PHP_EOL;
+            echo $productData['sku'] . ': Error!!!!!!!!' . PHP_EOL ;
+            Mage::log($productData['sku'] . ': ' . $e->getMessage(), null, 'importProducts.log');
         }
 
       //  exit('IMPORTED 1');
