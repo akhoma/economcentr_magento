@@ -1,8 +1,25 @@
 <?php if (count($this->getProducts()) > 0):?>
-    asdfgsd
-    <ul>
-    <?php foreach ($this->getProducts() as $product): ?>
-        <li><?php echo $product->getName(); ?></li>
-    <?php endforeach; ?>
-    </ul>
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+            <?php foreach ($this->getProducts() as $_product): ?>
+                <li class="jcarousel-product-item">
+                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getName(); ?>" class="product-image">
+                        <?php $_imgSize = 210; ?>
+                        <img id="product-collection-image-<?php echo $_product->getId(); ?>"
+                             src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" />
+                    </a>
+                    <div class="product-secondary">
+                        <?php echo $this->getPriceHtml($_product, true) ?>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+            </ul>
+        </div>
+
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+        <p class="jcarousel-pagination"></p>
+    </div>
 <?php endif; ?>

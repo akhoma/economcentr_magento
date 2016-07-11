@@ -7,6 +7,21 @@
 -->
 <layout version="0.1.0">
     <cms_index_index> translate="label">
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/homepageslider/jquery.jcarousel.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/homepageslider/jcarousel.homepage.responsive.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/homepageslider/jcarousel.homepage.responsive.css</name>
+            </action>
+        </reference>
+
         <reference name="content">
             <block type="ec_homepageproducts/homePageProducts"
                    name="ec_home_page_products"
