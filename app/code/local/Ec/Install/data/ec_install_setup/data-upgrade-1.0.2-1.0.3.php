@@ -4,11 +4,8 @@
  */
 /* @var $this Ec_Install_Model_Resource_Setup */
 
-
-
 $indexingProcesses = Mage::getSingleton('index/indexer')->getProcessById(3);
-
-    $indexingProcesses->reindexEverything();
+$indexingProcesses->reindexEverything();
 
 
 $storeIdRu = Mage::getModel('core/store')->getCollection()->addFieldToFilter('code', 'default')->getFirstItem()->getId();

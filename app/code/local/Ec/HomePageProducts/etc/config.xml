@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @category    Ec
+ * @package     Ec_HomePageProducts
+ */
+-->
+<config>
+    <modules>
+        <Ec_HomePageProducts>
+            <version>1.0.0</version>
+        </Ec_HomePageProducts>
+    </modules>
+    <global>
+        <resources>
+            <ec_homepageproducts_setup>
+                <setup>
+                    <module>Ec_HomePageProducts</module>
+                </setup>
+            </ec_homepageproducts_setup>
+        </resources>
+    </global>
+</config>

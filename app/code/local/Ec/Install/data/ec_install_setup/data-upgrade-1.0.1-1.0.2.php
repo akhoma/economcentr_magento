@@ -4,7 +4,7 @@
  *
  */
 
-/** @var $this Mage_Core_Model_Resource_Setup */
+/** @var $this Ec_Install_Model_Resource_Setup */
 
 $installer = $this;
 $config = new Mage_Core_Model_Config();

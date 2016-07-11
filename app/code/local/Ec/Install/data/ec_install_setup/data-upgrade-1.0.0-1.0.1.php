@@ -4,7 +4,7 @@
  * Create store views
  */
 
-/* @var $this Hastens_Install_Model_Resource_Setup */
+/* @var $this Ec_Install_Model_Resource_Setup */
 
 $websiteId = 1;
 $website = Mage::getModel('core/website')->load($websiteId);
