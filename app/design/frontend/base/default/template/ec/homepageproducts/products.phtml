@@ -1,0 +1,8 @@
+<?php if (count($this->getProducts()) > 0):?>
+    asdfgsd
+    <ul>
+    <?php foreach ($this->getProducts() as $product): ?>
+        <li><?php echo $product->getName(); ?></li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>

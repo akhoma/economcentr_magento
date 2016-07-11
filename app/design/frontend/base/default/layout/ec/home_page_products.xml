@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * @category Ec
+ * @package Ec_HomePageProducts
+ */
+-->
+<layout version="0.1.0">
+    <cms_index_index> translate="label">
+        <reference name="content">
+            <block type="ec_homepageproducts/homePageProducts"
+                   name="ec_home_page_products"
+                   as="ec_home_page_products"
+                   template="ec/homepageproducts/products.phtml" />
+        </reference>
+    </cms_index_index>
+</layout>

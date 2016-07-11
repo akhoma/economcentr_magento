@@ -13,6 +13,11 @@
         </Ec_HomePageProducts>
     </modules>
     <global>
+        <blocks>
+            <ec_homepageproducts>
+                <class>Ec_HomePageProducts_Block</class>
+            </ec_homepageproducts>
+        </blocks>
         <resources>
             <ec_homepageproducts_setup>
                 <setup>
@@ -21,4 +26,13 @@
             </ec_homepageproducts_setup>
         </resources>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ec_homepageproducts>
+                    <file>ec/home_page_products.xml</file>
+                </ec_homepageproducts>
+            </updates>
+        </layout>
+    </frontend>
 </config>
