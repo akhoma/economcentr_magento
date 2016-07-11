@@ -121,5 +121,17 @@
 }
 
 .jcarousel-product-item img {
+    background-color: #F6F6F6;
+    border: 2px solid #CCCCCC;
+    border-radius: 35px 35px 35px 35px;
     margin: 0 auto;
+    padding: 5px;
+}
+
+.jcarousel-product-item .product-price  {
+    background-color: #7C7E81;
+    color: white;
+    font-size: 26px !important;
+    font-weight: bold;
+    width: 100%;
 }
