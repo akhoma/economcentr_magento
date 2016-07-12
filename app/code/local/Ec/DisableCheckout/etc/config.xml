@@ -52,15 +52,6 @@
                     </ec_disablecheckout>
                 </observers>
             </controller_action_predispatch_checkout_onepage_index>
-            <catalog_product_is_salable_after>
-                <observers>
-                    <ec_disablecheckout>
-                        <type>singleton</type>
-                        <class>ec_disablecheckout/observer_disableProductSaleable</class>
-                        <method>execute</method>
-                    </ec_disablecheckout>
-                </observers>
-            </catalog_product_is_salable_after>
         </events>
     </global>
 </config>
