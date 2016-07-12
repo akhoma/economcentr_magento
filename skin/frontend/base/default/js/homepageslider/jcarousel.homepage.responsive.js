@@ -7,7 +7,7 @@
                 var width = jcarousel.innerWidth();
 
                 if (width >= 600) {
-                    width = width / 3;
+                    width = width / 4;
                 } else if (width >= 350) {
                     width = width / 2;
                 }
@@ -20,12 +20,12 @@
 
         $('.jcarousel-control-prev')
             .jcarouselControl({
-                target: '-=3'
+                target: '-=4'
             });
 
         $('.jcarousel-control-next')
             .jcarouselControl({
-                target: '+=3'
+                target: '+=4'
             });
 
         $('.jcarousel-pagination')
