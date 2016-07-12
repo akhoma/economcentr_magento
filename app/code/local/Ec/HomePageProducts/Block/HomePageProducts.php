@@ -34,4 +34,14 @@ class Ec_HomePageProducts_Block_HomePageProducts extends Mage_Catalog_Block_Prod
 
         return $this->_products;
     }
+
+    /**
+     * Check if add to cart button disabled
+     *
+     * @return array
+     */
+    public function isAddToCartDisabled()
+    {
+        return Mage::helper('ec_disablecheckout')->isCheckoutDisabled();
+    }
 }
