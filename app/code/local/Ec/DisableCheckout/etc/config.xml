@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @category    Ec
+ * @package     Ec_DisableCheckout
+ */
+-->
+<config>
+    <modules>
+        <Ec_DisableCheckout>
+            <version>1.0.0</version>
+        </Ec_DisableCheckout>
+    </modules>
+    <global>
+        <helpers>
+            <ec_disablecheckout>
+                <class>Ec_DisableCheckout_Helper</class>
+            </ec_disablecheckout>
+        </helpers>
+    </global>
+</config>
