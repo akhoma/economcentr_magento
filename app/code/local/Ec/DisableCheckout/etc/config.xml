@@ -13,10 +13,35 @@
         </Ec_DisableCheckout>
     </modules>
     <global>
+        <models>
+            <ec_disablecheckout>
+                <class>Ec_DisableCheckout_Model</class>
+            </ec_disablecheckout>
+        </models>
         <helpers>
             <ec_disablecheckout>
                 <class>Ec_DisableCheckout_Helper</class>
             </ec_disablecheckout>
         </helpers>
+        <events>
+            <controller_action_predispatch_checkout_cart_index>
+                <observers>
+                    <avatax>
+                        <type>singleton</type>
+                        <class>ec_disablecheckout/observer_disableCart</class>
+                        <method>execute</method>
+                    </avatax>
+                </observers>
+            </controller_action_predispatch_checkout_cart_index>
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <avatax>
+                        <type>singleton</type>
+                        <class>ec_disablecheckout/observer_disableOnepageCheckout</class>
+                        <method>execute</method>
+                    </avatax>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+        </events>
     </global>
 </config>
