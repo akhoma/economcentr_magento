@@ -41,6 +41,11 @@
                 <copyright>www.econom-centr.com.ua - 2kish Development</copyright>
             </footer>
         </design>
+        <wishlist>
+            <general>
+                <active>0</active>
+            </general>
+        </wishlist>
     </default>
     <frontend>
         <layout>
