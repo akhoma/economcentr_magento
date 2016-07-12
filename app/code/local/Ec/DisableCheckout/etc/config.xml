@@ -23,6 +23,16 @@
                 <class>Ec_DisableCheckout_Helper</class>
             </ec_disablecheckout>
         </helpers>
+        <blocks>
+            <ec_disablecheckout>
+                <class>Ec_DisableCheckout_Block</class>
+            </ec_disablecheckout>
+            <checkout>
+                <rewrite>
+                    <cart_minicart>Ec_DisableCheckout_Block_Checkout_Cart_Minicart</cart_minicart>
+                </rewrite>
+            </checkout>
+        </blocks>
         <events>
             <controller_action_predispatch_checkout_cart_index>
                 <observers>
