@@ -57,7 +57,6 @@ class Ec_Install_Model_Resource_Setup extends Mage_Core_Model_Resource_Setup
         $cmsPage->setIdentifier($identifier)
             ->setRootTemplate($templateType)
             ->setContent($content)
-            ->setContentHeading($title)
             ->setTitle($title)
             ->setStores($stores)
             ->save();

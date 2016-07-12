@@ -128,7 +128,7 @@ class Mage_Shell_Import_Products extends Mage_Shell_Abstract
                                )
                 )
              
-                ->setCategoryIds(array(2,3)); //assign product to categories
+                ->setCategoryIds(array(3,4)); //assign product to categories
 
 
                 if ($productData['image']) {
