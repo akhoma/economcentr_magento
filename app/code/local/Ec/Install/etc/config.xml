@@ -51,6 +51,12 @@
                 <active>0</active>
             </general>
         </wishlist>
+		<design>
+			<header>
+				<logo_src>images/logo.png</logo_src>
+				<logo_src_small>images/logo.png</logo_src_small>
+			</header>
+		</design>
     </default>
     <frontend>
         <layout>

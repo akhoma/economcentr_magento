@@ -6,5 +6,11 @@
                 <template>page/1column.phtml</template>
             </action>
         </reference>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/style.css</name>
+            </action>
+		</reference>
     </default>
 </layout>

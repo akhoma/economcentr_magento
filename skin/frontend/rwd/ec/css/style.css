@@ -1,0 +1,46 @@
+.header-language-background {
+	background-color:#333435 !important;
+}
+.page {
+    background: url("../images/bg.png") repeat scroll 50% center;
+    border-top: 3px solid #333435;
+}  
+
+#header , .main-container, .footer-container {
+	background: white;
+}
+
+#header.page-header {
+	padding: 0 !important;
+}
+
+.footer-container {
+	border-top: 2px solid white;
+	border-bottom: 10px solid #333435;
+	padding: 0 !important;
+	
+}
+
+.footer-container .footer {
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+#header-nav {
+    margin: 0;
+    padding: 1px 33px;
+    background: none repeat scroll 0 0 #333435;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.nav-primary {
+	margin: 4px !important;
+}
+
+.nav-primary a {
+    color: white !important;
+}
+
+.nav-primary a:hover, .nav-primary li.active a {
+    color: #FFBF00 !important;
+}
