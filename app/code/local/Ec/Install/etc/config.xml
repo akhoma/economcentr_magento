@@ -13,6 +13,11 @@
         </Ec_Install>
     </modules>
     <global>
+        <helpers>
+            <ec_install>
+                <class>Ec_Install_Helper</class>
+            </ec_install>
+        </helpers>
         <resources>
             <ec_install_setup>
                 <setup>
