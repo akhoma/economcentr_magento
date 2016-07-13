@@ -1,3 +1,14 @@
+a {
+    color: #333435 !important;
+    text-decoration: none;
+}
+h1, .h1 {
+
+    color: #333435 !important;;
+}
+
+
+
 .header-language-background {
 	background-color:#333435 !important;
 }
@@ -43,4 +54,36 @@
 
 .nav-primary a:hover, .nav-primary li.active a {
     color: #FFBF00 !important;
+}
+
+.button, .cart-table .product-cart-actions .button, #co-shipping-method-form .buttons-set .button, .footer .button {
+    background: #333435 !important;
+
+}
+
+.button:hover {
+	color: #FFBF00;
+}
+
+.header-minicart .product-details .product-name a {
+    color: #333435 !important;
+}
+
+.footer .block-title, .footer address {
+    color: #333435 !important;
+}
+
+#header-shop-info .phones , #header-shop-info .address{
+    float: left;
+    width: 250px;
+    margin-top: 18px;
+    margin-left: 43px;
+}
+
+
+@media only screen and (min-width: 771px) {
+	#header-search {
+		top: 34px !important;;
+
+	}
 }

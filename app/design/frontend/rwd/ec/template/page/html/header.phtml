@@ -53,10 +53,16 @@ $displayMyAccount = !$this->helper('ec_disablecheckout')->isCheckoutDisabled();
         </a>
         <div id="header-shop-info">
             <div class="phones">
-                <?php echo $this->helper('ec_install')->getHeaderShopPhones(); ?>
+			    <img src="<?php echo $this->getSkinUrl('images/phone.png') ?>" alt="" style="float: left;" border="0">
+				<span>
+					<?php echo $this->helper('ec_install')->getHeaderShopPhones(); ?>
+				</span>
             </div>
             <div class="address">
-                <?php echo $this->helper('ec_install')->getHeaderShopAddress(); ?>
+			    <img src="<?php echo $this->getSkinUrl('images/home_w.png') ?>" alt="" style="float: left;" border="0">
+				<span>
+					<?php echo $this->helper('ec_install')->getHeaderShopAddress(); ?>
+				</span>
             </div>
         </div>
         <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
