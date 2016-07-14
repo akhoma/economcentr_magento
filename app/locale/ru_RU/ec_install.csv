@@ -1,7 +1,39 @@
-"Account","Аккаунт"
+"Account","Профайл"
 "Cart","Корзина"
+"Checkout","Чекаут"
+"Log In","Войти"
 "View Shopping Cart","Просмотреть корзину"
 "Edit item","Редактировать"
+
+"Update Cart","Обновить корзину"
+"Empty Cart","Очистить корзину"
+"Estimate","Рассчитать"
+"Shopping Cart is Empty","Корзина пустая"
+"You have no items in your shopping cart.","У Вас нет товаров в корзине."
+"Click <a href=""%s"">here</a> to continue shopping.","Нажмите <a href=""%s"">сюда</a>, чтоб продолжить покупки"
+
+
+"If you have an account with us, please log in.","Войдите, если у Вас есть аккаут."
+"Forgot Your Password?","Забыли пароль?"
+"New Here?","Впервые на сайте?"
+"Login or Create an Account","Страница авторизации"
+"Registration is free and easy!","Регистрация бесплатная и простая!"
+"Faster checkout","Быстрая покупка"
+"Save multiple shipping addresses","Мутидоставка"
+"View and track orders and more","Просмотр ордеров и многое другое"
+"Please enter the following information to create your account.","Пожалуйста введите данные"
+"Sign Up for Newsletter","Подписка на новости"
+"Billing Agreements","Биллинг условия"
+"Recurring Profiles","Recurring профайл"
+"My Product Reviews","Мои обзоры продуктов"
+"My Applications","Мои приложения"
+"Newsletter Subscriptions","Подписка на новости"
+"My Downloadable Products","Скачиваемые продукты"
+
+
+"Address Book", "Адресная книга"
+
+"Compare","Сравнить"
 
 "You're reviewing:","Вы пишете отзыв на товар:"
 "Let us know your thoughts","Дайте нам знать о чем Вы думаете"
