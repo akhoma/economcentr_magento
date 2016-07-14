@@ -1,3 +1,10 @@
+@media only screen and (min-width: 771px) {
+    #header-search {
+        top: 34px !important;;
+
+    }
+}
+
 a {
     color: #333435 !important;
     text-decoration: none;
@@ -81,9 +88,36 @@ h1, .h1 {
 }
 
 
-@media only screen and (min-width: 771px) {
-	#header-search {
-		top: 34px !important;;
-
-	}
+ul.products-grid li.item {
+    border: 1px solid #ededed;
 }
+
+.products-grid .price-box{
+    background-color: #7C7E81;
+}
+
+.products-grid .price-box .price{
+    color: white;
+    font-size: 26px;
+}
+
+.actions .button {
+    color: #ffffff !important;
+}
+
+.actions .button:hover {
+    color: #FFBF00 !important;
+}
+
+.no-touch .product-image:hover {
+    border-color: #ccc !important;
+}
+
+/** Home page Slider */
+
+.jcarousel-product-item {
+    border: 1px solid #ccc !important;
+    margin: 0px;
+    padding: 14px;
+}
+/** Home page Slider End */

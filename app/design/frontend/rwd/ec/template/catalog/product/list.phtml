@@ -150,6 +150,10 @@ $addToCartButtonEnabled = !$this->helper('ec_disablecheckout')->isCheckoutDisabl
                                     <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                                 <?php endif; ?>
                             </div>
+                            <?php else: ?>
+                                <div class="actions">
+                                    <a title="<?php echo $this->__('View Details') ?>" class="button" href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->__('View Details') ?></a>
+                                </div>
                             <?php endif; ?>
                         </div>
                     </li>
