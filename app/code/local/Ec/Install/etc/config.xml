@@ -66,5 +66,14 @@
                 </ec_install>
             </updates>
         </layout>
+        <translate>
+            <modules>
+                <ec_install>
+                    <files>
+                        <default>ec_install.csv</default>
+                    </files>
+                </ec_install>
+            </modules>
+        </translate>
     </frontend>
 </config>
