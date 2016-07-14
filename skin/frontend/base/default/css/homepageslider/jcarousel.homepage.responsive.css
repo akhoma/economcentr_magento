@@ -72,6 +72,10 @@
     right: 15px;
 }
 
+.jcarousel-control-next, .jcarousel-control-prev {
+    color: white !important;
+}
+
 /** Carousel Pagination **/
 
 .jcarousel-pagination {

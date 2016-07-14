@@ -97,7 +97,7 @@ ul.products-grid li.item {
 }
 
 .products-grid .price-box .price{
-    color: white;
+    color: white !important;
     font-size: 26px;
 }
 
@@ -121,3 +121,11 @@ ul.products-grid li.item {
     padding: 14px;
 }
 /** Home page Slider End */
+
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price {
+    color: black !important;
+}
+
+.price-box .price {
+    color: black !important;
+}
