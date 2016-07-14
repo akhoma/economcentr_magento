@@ -30,7 +30,7 @@
                     <fields>
                         <disable_checkout translate="label">
                             <label>Disable Checkout</label>
-                            <comment>Disable checkout and AddToCart button</comment>
+                            <comment>Disable checkout, AddToCart button and MyAccount</comment>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>10</sort_order>
