@@ -1,6 +1,9 @@
 <?php if (count($this->getProducts()) > 0):?>
 <?php $_helper = $this->helper('catalog/output'); ?>
     <div class="jcarousel-wrapper">
+        <div class="home-page-products-header">
+            <span><?php echo $this->__('We recommend'); ?></span>
+        </div>
         <div class="jcarousel">
             <ul>
             <?php foreach ($this->getProducts() as $_product): ?>

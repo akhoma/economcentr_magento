@@ -15,7 +15,7 @@ a {
 }
 h1, .h1 {
 
-    color: #333435 !important;;
+    color: #333435 !important;
 }
 
 
@@ -80,6 +80,10 @@ h1, .h1 {
     color: #333435 !important;
 }
 
+.header-minicart .button {
+    color: white !important;
+}
+
 .footer .block-title, .footer address {
     color: #333435 !important;
 }
@@ -89,13 +93,8 @@ h1, .h1 {
     width: 250px;
     margin-top: 18px;
     margin-left: 43px;
+    font-size: 17px;
 }
-
-#header-shop-info .phones span , #header-shop-info .address span {
-    display: block;
-    margin-top: 6px;
-}
-
 
 ul.products-grid li.item {
     border: 1px solid #ededed;
