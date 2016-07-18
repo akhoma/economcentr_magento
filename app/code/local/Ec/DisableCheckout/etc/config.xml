@@ -32,6 +32,11 @@
                     <cart_minicart>Ec_DisableCheckout_Block_Checkout_Cart_Minicart</cart_minicart>
                 </rewrite>
             </checkout>
+            <catalog>
+                <rewrite>
+                    <product_price>Ec_DisableCheckout_Block_Catalog_Product_Price</product_price>
+                </rewrite>
+            </catalog>
         </blocks>
         <events>
             <controller_action_predispatch_checkout_cart_index>
