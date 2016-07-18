@@ -1,7 +1,11 @@
 @media only screen and (min-width: 771px) {
     #header-search {
-        top: 34px !important;;
+        top: 34px !important;
 
+    }
+
+    .skip-account {
+        right: 151px !important;
     }
 }
 
@@ -80,11 +84,16 @@ h1, .h1 {
     color: #333435 !important;
 }
 
-#header-shop-info .phones , #header-shop-info .address{
+#header-shop-info .phones , #header-shop-info .address {
     float: left;
     width: 250px;
     margin-top: 18px;
     margin-left: 43px;
+}
+
+#header-shop-info .phones span , #header-shop-info .address span {
+    display: block;
+    margin-top: 6px;
 }
 
 
