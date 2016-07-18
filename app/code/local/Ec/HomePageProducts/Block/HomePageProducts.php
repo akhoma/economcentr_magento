@@ -11,6 +11,15 @@ class Ec_HomePageProducts_Block_HomePageProducts extends Mage_Catalog_Block_Prod
      */
     protected $_products;
 
+    protected function _construct()
+    {
+        $this->addData(array(
+            'cache_lifetime' => 3600,
+            'cache_tags'     => array(Mage_Catalog_Model_Product::CACHE_TAG),
+            'cache_key'      => 'homepageproducts',
+        ));
+    }
+
     /**
      * Get products from home page products category
      *
