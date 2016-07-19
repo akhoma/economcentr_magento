@@ -32,4 +32,22 @@ class Ec_Install_Helper_Data extends Mage_Core_Helper_Abstract
             ->loadByCode('shop-address')
             ->getValue('html');
     }
+
+    /**
+     * Get Is Home Page
+     *
+     * @return string
+     */
+    public function getIsHomePage()
+    {
+        $isHomePage = Mage::getBlockSingleton('page/html_header')->getIsHomePage();
+        if (!$isHomePage) {
+            // workaround for store switcher case
+            // in this case native function doesn't work correctly
+            $action = Mage::app()->getFrontController()->getAction()->getFullActionName();
+            $isHomePage = ($action == 'cms_index_index') ? true : false;
+        }
+
+        return $isHomePage;
+    }
 }

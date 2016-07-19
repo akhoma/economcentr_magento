@@ -33,8 +33,7 @@
 ?>
 <?php
     $_menu = $this->getHtml('level-top');
-    $activeHomePageClass = Mage::getBlockSingleton('page/html_header')->getIsHomePage() ? " active" : '';
-
+    $activeHomePageClass = $this->helper('ec_install')->getIsHomePage() ? " active" : '';
 ?>
 
 <?php if($_menu): ?>
