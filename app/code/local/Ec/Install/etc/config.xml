@@ -18,6 +18,13 @@
                 <class>Ec_Install_Helper</class>
             </ec_install>
         </helpers>
+        <blocks>
+            <page>
+                <rewrite>
+                    <html_topmenu>Ec_Install_Block_Page_Html_Topmenu</html_topmenu>
+                </rewrite>
+            </page>
+        </blocks>
         <resources>
             <ec_install_setup>
                 <setup>
