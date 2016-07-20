@@ -50,7 +50,7 @@
                 <logo_alt>Econom-Centr</logo_alt>
             </header>
             <footer>
-                <copyright>Тел: +38 (099) 325 29 33, +38 (050) 372 71 88 <br /> www.econom-centr.com.ua - 2kish Development</copyright>
+                <copyright><![CDATA[Тел: +38 (099) 325 29 33, +38 (050) 372 71 88 <br /> www.econom-centr.com.ua - 2kish Development]]></copyright>
             </footer>
         </design>
         <wishlist>
