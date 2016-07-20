@@ -20,12 +20,12 @@
 
         $('.jcarousel-control-prev')
             .jcarouselControl({
-                target: '-=4'
+                target: '-=1'
             });
 
         $('.jcarousel-control-next')
             .jcarouselControl({
-                target: '+=4'
+                target: '+=1'
             });
 
         $('.jcarousel-pagination')
