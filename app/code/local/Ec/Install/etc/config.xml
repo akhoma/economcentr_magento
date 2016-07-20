@@ -9,7 +9,7 @@
 <config>
     <modules>
         <Ec_Install>
-            <version>1.0.6</version>
+            <version>1.0.7</version>
         </Ec_Install>
     </modules>
     <global>
@@ -50,7 +50,7 @@
                 <logo_alt>Econom-Centr</logo_alt>
             </header>
             <footer>
-                <copyright>www.econom-centr.com.ua - 2kish Development</copyright>
+                <copyright>Тел: +38 (099) 325 29 33, +38 (050) 372 71 88 <br /> www.econom-centr.com.ua - 2kish Development</copyright>
             </footer>
         </design>
         <wishlist>
