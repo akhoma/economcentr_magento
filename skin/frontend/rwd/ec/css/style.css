@@ -109,11 +109,11 @@ ul.products-grid li.item {
     font-size: 26px;
 }
 
-.actions .button {
+.actions .button, .buttons-set .button {
     color: #ffffff !important;
 }
 
-.actions .button:hover {
+.actions .button:hover, .buttons-set .button:hover {
     color: #FFBF00 !important;
 }
 
