@@ -13,10 +13,12 @@ class Ec_HomePageProducts_Block_HomePageProducts extends Mage_Catalog_Block_Prod
 
     protected function _construct()
     {
+        $storeCode = Mage::app()->getStore()->getCode();
+        $cacheKey = 'homepageproducts_' . $storeCode;
         $this->addData(array(
             'cache_lifetime' => 3600,
             'cache_tags'     => array(Mage_Catalog_Model_Product::CACHE_TAG),
-            'cache_key'      => 'homepageproducts',
+            'cache_key'      => $cacheKey,
         ));
     }
 
