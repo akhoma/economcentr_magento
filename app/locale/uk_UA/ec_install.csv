@@ -4,7 +4,7 @@
 "Log In","Увійти"
 "View Shopping Cart","Подивитися кошик"
 "Edit item","Редагувати"
-"Update Cart","Обновити кошик"
+"Update Cart","Оновити кошик"
 "Empty Cart","Очистити кошик"
 "Estimate","Вирахувати"
 "Shopping Cart is Empty","Кошик пустий"
@@ -57,3 +57,4 @@
 "You are now logged out","Ви вийшли із свого аккаунту"
 "You have logged out and will be redirected to our homepage in 5 seconds.","Ви вийшли і вас буде перенаправлено на домашню сторінку через 5 секунд"
 "Your order has been received.","Ваше замовлення відправлено."
+"%s was updated in your shopping cart.","%s був оновлений в кошику."
