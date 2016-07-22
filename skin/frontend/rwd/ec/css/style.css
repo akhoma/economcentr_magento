@@ -4,24 +4,24 @@
 
     }
 
-    .skip-account {
-        right: 151px !important;
+    .economcentr .skip-account {
+        right: 151px;
     }
 }
 
-a {
-    color: #333435 !important;
+.economcentr a {
+    color: #333435;
     text-decoration: none;
 }
-h1, .h1 {
+.economcentr h1, .economcentr .h1 {
 
-    color: #333435 !important;
+    color: #333435;
 }
 
 
 
-.header-language-background {
-	background-color:#333435 !important;
+.economcentr .header-language-background {
+	background-color:#333435;
 }
 .page {
     background: url("../images/bg.png") repeat scroll 50% center;
@@ -32,20 +32,20 @@ h1, .h1 {
 	background: white;
 }
 
-#header.page-header {
-	padding: 0 !important;
+.economcentr #header.page-header {
+	padding: 0;
 }
 
-.footer-container {
+.economcentr .footer-container {
 	border-top: 2px solid white;
 	border-bottom: 10px solid #333435;
-	padding: 0 !important;
+	padding: 0;
 	
 }
 
-.footer-container .footer {
-	padding: 0 !important;
-	border: 0 !important;
+.economcentr .footer-container .footer {
+	padding: 0;
+	border: 0;
 }
 
 #header-nav {
@@ -55,37 +55,38 @@ h1, .h1 {
     border-radius: 15px 15px 15px 15px;
 }
 
-.nav-primary {
-	margin: 4px !important;
+.economcentr .nav-primary {
+	margin: 4px
 }
 
-.nav-primary a {
-    color: white !important;
+.economcentr .nav-primary a {
+    color: white;
 }
 
-.nav-primary a:hover, .nav-primary li.active a {
-    color: #FFBF00 !important;
+.economcentr .nav-primary a:hover, .economcentr .nav-primary li.active a {
+    color: #FFBF00;
 }
 
-.button, .cart-table .product-cart-actions .button, #co-shipping-method-form .buttons-set .button, .footer .button {
-    background: #333435 !important;
+.economcentr .button, .economcentr .cart-table .product-cart-actions .button, .economcentr #co-shipping-method-form .buttons-set .button, .economcentr .footer .button {
+    background: #333435;
 
 }
 
-.button:hover {
+.economcentr .button:hover {
 	color: #FFBF00;
+    background: #333435;
 }
 
-.header-minicart .product-details .product-name a {
-    color: #333435 !important;
+.economcentr .header-minicart .product-details .product-name a {
+    color: #333435;
 }
 
-.header-minicart .button {
-    color: white !important;
+.economcentr .header-minicart .button {
+    color: white;
 }
 
-.footer .block-title, .footer address {
-    color: #333435 !important;
+.economcentr .footer .block-title, .economcentr .footer address {
+    color: #333435;
 }
 
 #header-shop-info .phones , #header-shop-info .address {
@@ -104,38 +105,38 @@ ul.products-grid li.item {
     background-color: #7C7E81;
 }
 
-.products-grid .price-box .price{
-    color: white !important;
+.economcentr .products-grid .price-box .price{
+    color: white;
     font-size: 26px;
 }
 
-.actions .button, .buttons-set .button {
-    color: #ffffff !important;
+.economcentr .actions .button, .economcentr .buttons-set .button {
+    color: #ffffff;
 }
 
-.actions .button:hover, .buttons-set .button:hover {
-    color: #FFBF00 !important;
+.economcentr .actions .button:hover, .economcentr .buttons-set .button:hover {
+    color: #FFBF00;
 }
 
-.no-touch .product-image:hover {
-    border-color: #ccc !important;
+.economcentr .no-touch .product-image:hover {
+    border-color: #ccc;
 }
 
 /** Home page Slider */
 
-.jcarousel-product-item {
-    border: 1px solid #ccc !important;
+.economcentr .jcarousel-product-item {
+    border: 1px solid #ccc;
     margin: 0px;
     padding: 14px;
 }
 /** Home page Slider End */
 
-.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price {
-    color: black !important;
+.economcentr .product-view .product-shop .price-box .regular-price .price, .economcentr .product-view .product-shop .price-box .special-price .price, .economcentr .product-view .product-shop .price-box .full-product-price .price {
+    color: black;
 }
 
-.price-box .price {
-    color: black !important;
+.economcentr .price-box .price {
+    color: black;
 }
 
 @media only screen and (max-width: 599px) {
