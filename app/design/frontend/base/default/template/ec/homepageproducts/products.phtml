@@ -1,9 +1,6 @@
 <?php if (count($this->getProducts()) > 0):?>
 <?php $_helper = $this->helper('catalog/output'); ?>
     <div class="jcarousel-wrapper">
-        <div class="home-page-products-header">
-            <span><?php echo $this->__('We recommend'); ?></span>
-        </div>
         <div class="jcarousel">
             <ul>
             <?php foreach ($this->getProducts() as $_product): ?>
@@ -30,7 +27,9 @@
                             <div class="product-secondary">
                                 <?php echo $this->getPriceHtml($_product, true) ?>
                             </div>
-                            <?php if (!$this->isAddToCartDisabled()): ?>
+                            <?php // removed add to card. Can be reverted in future. ?>
+							<?php // if (!$this->isAddToCartDisabled()): ?>
+							<?php if (false): ?>
                             <div class="product-secondary">
                                 <?php if($_product->isSaleable() && !$_product->canConfigure()): ?>
                                     <p class="action"><button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button></p>
