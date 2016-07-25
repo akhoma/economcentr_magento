@@ -200,8 +200,9 @@ class Ec_OrderSmsNotify_Model_Sms extends Mage_Core_Model_Abstract
             $params['phones'] = $this->getPhones();
             $params['mes'] = $this->getMessage();
             $params['time'] = 0;
-            $client = new SoapClient('http://smsc.ua/sys/soap.php?wsdl');
-            $result = $client->send_sms($params);
+            $wsdlFilePath = Mage::getModuleDir('etc', 'Ec_OrderSmsNotify') . DS . '/smsc_wsdl.xml';
+            $client = new SoapClient($wsdlFilePath);
+            $res = $client->send_sms($params);
         } catch (Exception $e) {
             Mage::logException($e);
         }
