@@ -22,5 +22,16 @@
                 <class>Ec_OrderSmsNotify_Model</class>
             </ec_ordersmsnotify>
         </models>
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <ec_ordersmsnotify_order_place>
+                        <type>singleton</type>
+                        <class>ec_ordersmsnotify/observer_orderPlaceSmsNotify</class>
+                        <method>execute</method>
+                    </ec_ordersmsnotify_order_place>
+                </observers>
+            </sales_order_place_after>
+        </events>
     </global>
 </config>
