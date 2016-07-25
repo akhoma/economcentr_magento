@@ -17,5 +17,10 @@
                 <class>Ec_OrderSmsNotify_Helper</class>
             </ec_ordersmsnotify>
         </helpers>
+        <models>
+            <ec_ordersmsnotify>
+                <class>Ec_OrderSmsNotify_Model</class>
+            </ec_ordersmsnotify>
+        </models>
     </global>
 </config>

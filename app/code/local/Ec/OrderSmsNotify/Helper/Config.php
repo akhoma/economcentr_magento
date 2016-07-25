@@ -28,7 +28,10 @@ class Ec_OrderSmsNotify_Helper_Config extends Mage_Core_Helper_Abstract
      */
     const XML_PATH_TO_ORDER_SMS_NOTIFY_SENDER = 'ec_order_sms_notify/settings/sender';
 
-
+    /**
+     * Path to order sms notify phones
+     */
+    const XML_PATH_TO_ORDER_SMS_NOTIFY_PHONES = 'ec_order_sms_notify/settings/phones';
 
     /**
      * Is Order Sms Notify Enabled
@@ -72,5 +75,16 @@ class Ec_OrderSmsNotify_Helper_Config extends Mage_Core_Helper_Abstract
     public function getSender($store = null)
     {
         return Mage::getStoreConfig(self::XML_PATH_TO_ORDER_SMS_NOTIFY_SENDER, $store);
+    }
+
+    /**
+     * Get phones
+     *
+     * @param null|bool|int|Mage_Core_Model_Store $store $store
+     * @return string
+     */
+    public function getPhones($store = null)
+    {
+        return Mage::getStoreConfig(self::XML_PATH_TO_ORDER_SMS_NOTIFY_PHONES, $store);
     }
 }
