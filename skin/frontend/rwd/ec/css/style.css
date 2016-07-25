@@ -1,4 +1,4 @@
-@media only screen and (min-width: 771px) {
+@media only screen and (min-width: 770px) {
     #header-search {
         top: 34px !important;
 
@@ -70,6 +70,11 @@
 .economcentr .nav-primary li.level0 ul {
     background: #333435;
 }
+
+.economcentr .nav-primary a.level0 {
+    color: white;
+}
+
 
 .economcentr .button, .economcentr .cart-table .product-cart-actions .button, .economcentr #co-shipping-method-form .buttons-set .button, .economcentr .footer .button {
     background: #333435;
