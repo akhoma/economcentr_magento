@@ -63,7 +63,7 @@
     color: white;
 }
 
-.economcentr .nav-primary a:hover, .economcentr .nav-primary li.active a {
+.economcentr .nav-primary a:hover, .economcentr .nav-primary li.active > a {
     color: #FFBF00;
 }
 
