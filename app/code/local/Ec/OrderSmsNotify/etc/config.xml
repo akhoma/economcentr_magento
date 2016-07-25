@@ -11,4 +11,11 @@
             <version>1.0.0</version>
         </Ec_OrderSmsNotify>
     </modules>
+    <global>
+        <helpers>
+            <ec_ordersmsnotify>
+                <class>Ec_OrderSmsNotify_Helper</class>
+            </ec_ordersmsnotify>
+        </helpers>
+    </global>
 </config>
