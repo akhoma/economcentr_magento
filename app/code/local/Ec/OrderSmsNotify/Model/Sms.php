@@ -193,12 +193,19 @@ class Ec_OrderSmsNotify_Model_Sms extends Mage_Core_Model_Abstract
      */
     public function send()
     {
-        $params['login'] = $this->getLogin();
-        $params['password'] = $this->getPassword();
-        $params['sender'] = $this->getSender();
-        $params['phones'] = $this->getPhones();
-        $params['message'] = $this->getMessage();
-        var_dump($params);
-        exit();
+        try {
+            $params['login'] = $this->getLogin();
+            $params['psw'] = $this->getPassword();
+            $params['sender'] = $this->getSender();
+            $params['phones'] = $this->getPhones();
+            $params['mes'] = $this->getMessage();
+            $params['time'] = 0;
+            $client = new SoapClient('http://smsc.ua/sys/soap.php?wsdl');
+            $result = $client->send_sms($params);
+        } catch (Exception $e) {
+            Mage::logException($e);
+        }
+
+        return $this;
     }
 }
