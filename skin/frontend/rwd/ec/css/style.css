@@ -67,10 +67,19 @@
     color: #FFBF00;
 }
 
+.economcentr .nav-primary li.level0 ul {
+    background: #333435;
+}
+
 .economcentr .button, .economcentr .cart-table .product-cart-actions .button, .economcentr #co-shipping-method-form .buttons-set .button, .economcentr .footer .button {
     background: #333435;
 
 }
+
+.economcentr .nav-primary li:hover > a {
+    color: #FFBF00;
+}
+
 
 .economcentr .button:hover {
 	color: #FFBF00;
@@ -144,3 +153,5 @@ ul.products-grid li.item {
         display: none;
     }
 }
+
+
