@@ -14,15 +14,13 @@
     color: #333435;
 }
 
-
-
 .economcentr .header-language-background {
 	background-color:#333435;
 }
 .page {
     background: url("../images/bg.png") repeat scroll 50% center;
     border-top: 3px solid #333435;
-}  
+}
 
 #header , .main-container, .footer-container {
 	background: white;
@@ -36,7 +34,7 @@
 	border-top: 2px solid white;
 	border-bottom: 10px solid #333435;
 	padding: 0;
-	
+
 }
 
 .economcentr .footer-container .footer {
@@ -155,4 +153,18 @@ ul.products-grid li.item {
     }
 }
 
+.economcentr .err404-content-title-top, .economcentr .err404-content-title-text {
+    font-size: 5em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
 
+.economcentr .err404-content-title-text {
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.page-404-wrapper {
+    text-align: center;
+}
