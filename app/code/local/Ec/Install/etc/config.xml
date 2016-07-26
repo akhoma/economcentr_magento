@@ -9,7 +9,7 @@
 <config>
     <modules>
         <Ec_Install>
-            <version>1.0.12</version>
+            <version>1.0.13</version>
         </Ec_Install>
     </modules>
     <global>
