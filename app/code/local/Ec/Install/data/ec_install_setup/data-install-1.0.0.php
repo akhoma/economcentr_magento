@@ -1,0 +1,4 @@
+<?php
+/**
+ * EEc install init
+ */
