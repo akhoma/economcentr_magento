@@ -1,4 +1,0 @@
-<?php
-/**
- * EEc install init
- */
