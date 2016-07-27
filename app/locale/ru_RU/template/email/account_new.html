@@ -20,12 +20,12 @@
             <h1>Приветствуем вас на {{var store.getFrontendName()}}.</h1>
             <p>Чтобы войти при посещении нашего сайта просто нажмите <a href="{{store url="customer/account/"}}">Войти</a> или <a href="{{store url="customer/account/"}}">Аккаунт</a> в верхней части каждой страницы , а затем введите свой ​​адрес электронной почты и пароль</p>
             <p class="highlighted-text">
-                Используйте следующие значения , когда будет предложено войти:<br/>
+                Используйте следующие значения, когда будет предложено войти:<br/>
                 <strong>Email</strong>: {{var customer.email}}<br/>
                 <strong>Пароль</strong>: {{htmlescape var=$customer.password}}
             </p>
             <p>
-                Если у вас есть какие-либо вопросы , пожалуйста, не стесняйтесь связаться с нами по адресу
+                Если у вас есть какие-либо вопросы, пожалуйста, не стесняйтесь связаться с нами по адресу
                 <a href="mailto:{{var store_email}}">{{var store_email}}</a>
                 {{depend store_phone}} или звоните <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
             </p>
