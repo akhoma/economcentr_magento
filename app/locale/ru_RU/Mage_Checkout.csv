@@ -223,7 +223,7 @@
 "You have no items in your shopping cart.","Ваша корзина покупок пуста."
 "You will receive an order confirmation email with details of your order and a link to track its progress.","Вы получите письмо на ваш адрес электронной почты (email) с подробной информацией о заказе и ссылкой на страницу, на которой можно проверить текущий статус заказа."
 "Your Checkout Progress","Стадия оформления заказа"
-"Your order # is: %s","Номер вашего заказа: %s"
+"Your order # is: %s.","Номер вашего заказа: %s."
 "Your order # is: <a href=""%s"">%s</a>","Номер вашего заказа: <a href=""%s"">%s</a>"
 "Your order has been received","Ваш заказ получен"
 "Your order number is ","Номер вашего заказа: "
