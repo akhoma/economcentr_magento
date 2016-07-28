@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-    <default>
+    <ec_set_one_column_page>
         <reference name="root">
             <action method="setTemplate">
                 <template>page/1column.phtml</template>
             </action>
+        </reference>
+    </ec_set_one_column_page>
+    <default>
+        <update handle="ec_set_one_column_page"/>
+        <reference name="root">
             <action method="addBodyClass">
                 <classname>economcentr</classname>
             </action>
@@ -17,11 +22,7 @@
 		</reference>
     </default>
     <contacts_index_index translate="label">
-        <reference name="root">
-            <action method="setTemplate">
-                <template>page/1column.phtml</template>
-            </action>
-        </reference>
+        <update handle="ec_set_one_column_page"/>
     </contacts_index_index>
     <checkout_cart_index>
         <remove name="checkout.cart.shipping" />
@@ -39,4 +40,10 @@
     <catalog_product_view>
         <remove name="product_tag_list" />
     </catalog_product_view>
+    <review_product_list>
+        <update handle="ec_set_one_column_page"/>
+    </review_product_list>
+    <sendfriend_product_send>
+        <update handle="ec_set_one_column_page"/>
+    </sendfriend_product_send>
 </layout>
