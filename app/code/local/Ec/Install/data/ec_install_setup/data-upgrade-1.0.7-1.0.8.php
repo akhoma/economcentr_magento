@@ -9,7 +9,7 @@ $storeIdUa = Mage::getModel('core/store')->getCollection()->addFieldToFilter('co
 Mage::getConfig()->saveConfig('payment/cashondelivery/title', '', 'stores', $storeIdRu);
 Mage::getConfig()->saveConfig('payment/cashondelivery/title', '', 'stores', $storeIdUa);
 Mage::getConfig()->saveConfig('payment/cashondelivery/instructions', '<ul><li>Предоплата на карту</li><li>Наложный платеж</li></ul>', 'stores', $storeIdRu);
-Mage::getConfig()->saveConfig('payment/cashondelivery/instructions', '<ul><li>Передплата на картку</li><li>Оплата при доставці</li></ul>', 'stores', $storeIdUa);
+Mage::getConfig()->saveConfig('payment/cashondelivery/instructions', '<ul><li>Передоплата на картку</li><li>Оплата при доставці</li></ul>', 'stores', $storeIdUa);
 Mage::getConfig()->saveConfig('payment/cashondelivery/active', 1, 'default', 0);
 Mage::getConfig()->saveConfig('payment/free/active', 0, 'default', 0);
 Mage::getConfig()->saveConfig('payment/checkmo/active', 0, 'default', 0);
