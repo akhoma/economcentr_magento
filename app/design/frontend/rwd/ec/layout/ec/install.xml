@@ -46,4 +46,7 @@
     <sendfriend_product_send>
         <update handle="ec_set_one_column_page"/>
     </sendfriend_product_send>
+    <catalogsearch_result_index>
+        <update handle="ec_set_one_column_page"/>
+    </catalogsearch_result_index>
 </layout>
