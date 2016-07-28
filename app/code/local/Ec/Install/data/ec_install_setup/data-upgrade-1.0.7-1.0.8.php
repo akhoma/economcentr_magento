@@ -14,10 +14,10 @@ Mage::getConfig()->saveConfig('payment/checkmo/active', 0, 'default', 0);
 Mage::getConfig()->saveConfig('payment/ccsave/active', 0, 'default', 0);
 
 // Shipping
-Mage::getConfig()->saveConfig('carriers/flatrate/title', 'Фиксированная ставка', 'stores', $storeIdRu);
-Mage::getConfig()->saveConfig('carriers/flatrate/title', 'Фіксована оплата', 'stores', $storeIdUa);
-Mage::getConfig()->saveConfig('carriers/flatrate/name', 'Фиксироровано', 'stores', $storeIdRu);
-Mage::getConfig()->saveConfig('carriers/flatrate/name', 'Фіксовано', 'stores', $storeIdUa);
+Mage::getConfig()->saveConfig('carriers/flatrate/title', 'Новая почта,  Укр. почта или другая служба.', 'stores', $storeIdRu);
+Mage::getConfig()->saveConfig('carriers/flatrate/title', 'Нова пошта,  Укр. пошта або інша служба', 'stores', $storeIdUa);
+Mage::getConfig()->saveConfig('carriers/flatrate/name', 'Примерно', 'stores', $storeIdRu);
+Mage::getConfig()->saveConfig('carriers/flatrate/name', 'Приблизно', 'stores', $storeIdUa);
 Mage::getConfig()->saveConfig('carriers/flatrate/active', 1, 'default', 0);
 Mage::getConfig()->saveConfig('carriers/flatrate/price', 35, 'default', 0);
 Mage::getConfig()->saveConfig('carriers/flatrate/type', 'O', 'default', 0);
