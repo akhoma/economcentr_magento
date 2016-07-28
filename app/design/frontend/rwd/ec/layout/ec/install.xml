@@ -36,4 +36,7 @@
             <action method="removeLinkByName"><name>downloadable_products</name></action>
         </reference>
     </customer_account>
+    <catalog_product_view>
+        <remove name="product_tag_list" />
+    </catalog_product_view>
 </layout>
