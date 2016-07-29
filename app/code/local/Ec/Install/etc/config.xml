@@ -9,7 +9,7 @@
 <config>
     <modules>
         <Ec_Install>
-            <version>1.0.11</version>
+            <version>1.0.13</version>
         </Ec_Install>
     </modules>
     <global>
@@ -24,6 +24,11 @@
                     <html_topmenu>Ec_Install_Block_Page_Html_Topmenu</html_topmenu>
                 </rewrite>
             </page>
+            <customer>
+                <rewrite>
+                    <account_navigation>Ec_Install_Block__Customer_Account_Navigation</account_navigation>
+                </rewrite>
+            </customer>
         </blocks>
         <resources>
             <ec_install_setup>
