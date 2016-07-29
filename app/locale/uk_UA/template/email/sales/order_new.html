@@ -27,11 +27,11 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="email-heading">
-                        <h1>Спасибо Вам за заказ от {{var store.getFrontendName()}}.</h1>
-                        <p>После того как ваш заказ будет отправлен мы вышлем письмо со ссылкой для отслеживания Вашего заказа. Данные о Вашем заказе ниже. Еще раз спасибо за покупку.</p>
+                        <h1>Дякую Вам за замовлення від {{var store.getFrontendName()}}.</h1>
+                        <p>Після того як ваше замовлення буде відправлене ми надішлемо лист з посиланням для відстеження Вашого замовлення. Дані про Ваше замовлення нижче. Ще раз спасибі за покупку.</p>
                     </td>
                     <td class="store-info">
-                        <h4>Вопроси по заказу?</h4>
+                        <h4>Питання по замовленню?</h4>
                         <p>
                             {{depend store_phone}}
                             <b>Звоните:</b>
@@ -51,8 +51,8 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Ваш заказ <span class="no-link">#{{var order.increment_id}}</span></h3>
-            <p>Оформлен {{var order.getCreatedAtFormated('long')}}</p>
+            <h3>Ваше замовлення <span class="no-link">#{{var order.increment_id}}</span></h3>
+            <p>Оформлено {{var order.getCreatedAtFormated('long')}}</p>
         </td>
     </tr>
     <tr class="order-information">
@@ -68,7 +68,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Оплата по адресу:</h6>
+                        <h6>Оплата за адресою:</h6>
                         <p><span class="no-link">{{var order.getBillingAddress().format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
@@ -81,12 +81,12 @@
                 <tr>
                     {{depend order.getIsNotVirtual()}}
                     <td class="method-info">
-                        <h6>Способ доставки:</h6>
+                        <h6>Спосіб доставки:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
                     {{/depend}}
                     <td class="method-info">
-                        <h6>Метод оплати:</h6>
+                        <h6>Спосіб оплати:</h6>
                         {{var payment_html}}
                     </td>
                 </tr>

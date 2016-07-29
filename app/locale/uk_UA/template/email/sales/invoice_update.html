@@ -24,7 +24,7 @@
                 <tr>
                     <td class="action-content">
                         <h1>{{htmlescape var=$order.getCustomerName()}},</h1>
-                        <p>Ваш заказ <span class="no-link">#{{var order.increment_id}}</span> обновлен: <strong>{{var order.getStatusLabel()}}</strong></p>
+                        <p>Ваше замовлення <span class="no-link">#{{var order.increment_id}}</span> оновлене: <strong>{{var order.getStatusLabel()}}</strong></p>
                         {{if comment}}
                         <table cellspacing="0" cellpadding="0" class="message-container">
                             <tr>
@@ -32,11 +32,11 @@
                             </tr>
                         </table>
                         {{/if}}
-                        <p>Вы можете проверить статус вашего заказа <a href="{{store url="customer/account/"}}">авторизовавшись</a>.</p>
+                        <p>Ви можете перевірити статус вашого замовлення <a href="{{store url="customer/account/"}}">авторизувавшись</a>.</p>
                         <p>
-                            Если у Вас есть вопросы то пишите нам на
+                            Якщо у Вас є питання, то пишіть нам на
                             <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} или звоните <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+                            {{depend store_phone}} або телефонуйте <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
                         </p>
                     </td>
                 </tr>

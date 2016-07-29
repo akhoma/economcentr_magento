@@ -28,11 +28,11 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="email-heading">
-                        <h1>Спасибо Вам за заказ от {{var store.getFrontendName()}}.</h1>
-                        <p>Вы можете проверить статус вашего заказа <a href="{{store url="customer/account/"}}">авторизовавшись</a>.</p>
+                        <h1>Дякую Вам за замовлення від {{var store.getFrontendName()}}.</h1>
+                        <p>Ви можете перевірити статус вашого замовлення <a href="{{store url="customer/account/"}}">авторизувавшись</a>.</p>
                     </td>
                     <td class="store-info">
-                        <h4>Вопросы по заказу?</h4>
+                        <h4>Питання по замовленню?</h4>
                         <p>
                             {{depend store_phone}}
                             <b>Телефон:</b>
@@ -52,8 +52,8 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Ваша счет фактура <span class="no-link">#{{var invoice.increment_id}}</span></h3>
-            <p>Заказ <span class="no-link">#{{var order.increment_id}}</span></p>
+            <h3>Ваша рахунок фактура <span class="no-link">#{{var invoice.increment_id}}</span></h3>
+            <p>Замовлення <span class="no-link">#{{var order.increment_id}}</span></p>
         </td>
     </tr>
     <tr class="order-information">
@@ -69,7 +69,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Оплата по адресу:</h6>
+                        <h6>Оплата за адресою:</h6>
                         <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
@@ -82,12 +82,12 @@
                 <tr>
                     {{depend order.getIsNotVirtual()}}
                     <td class="method-info">
-                        <h6>Способ доставки:</h6>
+                        <h6>Спосіб доставки:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
                     {{/depend}}
                     <td class="method-info">
-                        <h6>Метод оплаты:</h6>
+                        <h6>Спосіб оплати:</h6>
                         {{var payment_html}}
                     </td>
                 </tr>
