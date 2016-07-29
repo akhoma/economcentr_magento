@@ -13,6 +13,11 @@
         </Ec_Install>
     </modules>
     <global>
+        <models>
+            <ec_install>
+                <class>Ec_Install_Model</class>
+            </ec_install>
+        </models>
         <helpers>
             <ec_install>
                 <class>Ec_Install_Helper</class>
@@ -38,6 +43,17 @@
                 </setup>
             </ec_install_setup>
         </resources>
+        <events>
+            <controller_action_layout_render_before_review_product_list>
+                <observers>
+                    <ec_install>
+                        <type>singleton</type>
+                        <class>ec_install/observer_addMessagesToReviewProductListPage</class>
+                        <method>execute</method>
+                    </ec_install>
+                </observers>
+            </controller_action_layout_render_before_review_product_list>
+        </events>
     </global>
     <default>
         <design>
