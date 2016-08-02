@@ -222,7 +222,7 @@
 "We are processing your order and you will soon receive an email with details of the order. Once the order has shipped you will receive another email with a link to track its progress.","Ми обробляємо Ваше замовлення і невдовзі Ви отримаєте email з деталями замовлення. Після відправки замовлення Ви отримаєте ще один email з посиланням для відслідковування його шляху."
 "You have no items in your shopping cart.","Ваш кошик порожній."
 "You will receive an order confirmation email with details of your order and a link to track its progress.","Ви отримаєте email для підтвердження замовлення зі всією детальнішою інформацією та посиланням для відслідковування його шляху."
-"Your Checkout Progress","Стадія оформлення замовлення"
+"Your Checkout Progress","Оформлення замовлення"
 "Your order # is: %s.","Номер Вашого замовлення: %s"
 "Your order # is: <a href=""%s"">%s</a>","Your order # is: <a href=""%s"">%s</a>"
 "Your order has been received","Ваше замовлення було прийнято"
