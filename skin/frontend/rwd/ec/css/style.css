@@ -168,3 +168,8 @@ ul.products-grid li.item {
 .page-404-wrapper {
     text-align: center;
 }
+
+
+.product-view .sharing-links a.link-vk {
+    background-image: url(../images/vk32.png);
+}
