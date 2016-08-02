@@ -43,7 +43,7 @@
 "Checkout method","Метод оформлення замовлення"
 "Checkout with Multiple Addresses","Оформити замовлення з кількома адресами"
 "City","Місто"
-"Click <a href=""%s"" onclick=""this.target='_blank'"">here to print</a> a copy of your order confirmation.","Click <a href=""%s"" onclick=""this.target='_blank'"">here to print</a> a copy of your order confirmation."
+"Click <a href=""%s"" onclick=""this.target='_blank'"">here to print</a> a copy of your order confirmation.","Натисніть <a href=""%s"" onclick=""this.target='_blank'"">сюди</a> щоб роздрукувати інформацію про замоовлення."
 "Close","Закрити"
 "Company","Компанія"
 "Condition Name","Condition Name"
