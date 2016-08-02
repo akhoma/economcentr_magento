@@ -1,0 +1,36 @@
+<!--@subject Вітаємо, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Вітаємо Вас на {{var store.getFrontendName()}}.</h1>
+            <p>Щоб увійти при відвідуванні вашого сайту просто натисніть <a href="{{store url="customer/account/"}}">Вхід</a> або <a href="{{store url="customer/account/"}}">Аккаунт</a> у верхній частині кожної сторінки, а потім введіть свою адресу електронної пошти і пароль</p>
+            <p class="highlighted-text">
+                Використовуйте наступні значення, коли буде запропоновано увійти:<br/>
+                <strong>Email</strong>: {{var customer.email}}<br/>
+                <strong>Пароль</strong>: {{htmlescape var=$customer.password}}
+            </p>
+            <p>
+                Якщо у вас є які-небудь питання, будь ласка, не соромтеся зв'язатися з нами за адресою
+                <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                {{depend store_phone}} або телефонуйте <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+            </p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
