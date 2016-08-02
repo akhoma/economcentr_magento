@@ -222,7 +222,7 @@
 "We are processing your order and you will soon receive an email with details of the order. Once the order has shipped you will receive another email with a link to track its progress.","Мы обрабатываем ваш заказ. В ближайшее время вы получите электронное письмо с подробной информацией о заказе. После отправки заказа вы получите еще одно письмо со ссылкой для отслеживания пути посылки."
 "You have no items in your shopping cart.","Ваша корзина покупок пуста."
 "You will receive an order confirmation email with details of your order and a link to track its progress.","Вы получите письмо на ваш адрес электронной почты (email) с подробной информацией о заказе и ссылкой на страницу, на которой можно проверить текущий статус заказа."
-"Your Checkout Progress","Стадия оформления заказа"
+"Your Checkout Progress","Оформления заказа"
 "Your order # is: %s.","Номер вашего заказа: %s."
 "Your order # is: <a href=""%s"">%s</a>","Номер вашего заказа: <a href=""%s"">%s</a>"
 "Your order has been received","Ваш заказ получен"

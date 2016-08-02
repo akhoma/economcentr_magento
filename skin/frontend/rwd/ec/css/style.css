@@ -168,3 +168,33 @@ ul.products-grid li.item {
 .page-404-wrapper {
     text-align: center;
 }
+
+
+.product-view .sharing-links a.link-vk {
+    background-image: url(../images/vk32.png);
+}
+
+.economcentr  .header-minicart .subtotal .label {
+    color: #636363;
+}
+
+.economcentr .product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1 {
+    color: #636363;
+}
+
+.economcentr .availability.in-stock {
+    color: #3399cc;
+}
+
+.economcentr .cart .buttons-set .button, .economcentr .cart-table .button, .economcentr .sidebar .actions .button, .economcentr .button.button-secondary {
+    background: #333435;
+    color: #ffffff;
+}
+
+.economcentr .cart .buttons-set .button:hover,
+.economcentr .cart-table .button:hover,
+.economcentr .sidebar .actions .button:hover,
+.economcentr .button.button-secondary:hover {
+    background: #333435;
+    color: #FFBF00;
+}
