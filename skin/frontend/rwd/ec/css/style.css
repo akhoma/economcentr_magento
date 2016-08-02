@@ -177,3 +177,11 @@ ul.products-grid li.item {
 .economcentr  .header-minicart .subtotal .label {
     color: #636363;
 }
+
+.economcentr .product-view .product-shop .product-name .h1, .product-view .product-img-box .product-name h1 {
+    color: #636363;
+}
+
+.economcentr .availability.in-stock {
+    color: #3399cc;
+}
