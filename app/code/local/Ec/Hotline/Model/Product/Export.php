@@ -9,14 +9,27 @@ class Ec_Hotline_Model_Product_Export extends Varien_Object
 {
 
     /**
-     * Disable Cart. Redirect to home page
+     * Get csv data for export
      *
-     * @param Varien_Event_Observer $observer
-     * @return $this
+     * @return string
      */
-    public function export(Varien_Event_Observer $observer)
+    public function getCsvData()
     {
-        $catId = Mage::helper('ec_hotline')->getProductsCategoryId();
-        $a = 1;
+        $catId = Mage::helper('ec_hotline')->getProductsCategoryId()
+               ?: Mage::app()->getStore(1)->getRootCategoryId();;
+        $category = Mage::getModel('catalog/category')
+            ->setStoreId(Mage::app()->getStore()->getId())
+            ->load($catId);
+
+        $products = $category
+            ->getProductCollection()
+            ->addAttributeToSelect ('*')
+            ->getItems();
+
+        $output = '';
+        foreach($products as $product) {
+            $output .= ',' . $product->getName();
+        }
+        return $output;
     }
 }
