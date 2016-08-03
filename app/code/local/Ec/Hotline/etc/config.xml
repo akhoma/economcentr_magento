@@ -18,5 +18,26 @@
                 <class>Ec_Hotline_Model</class>
             </ec_hotline>
         </models>
+        <helpers>
+            <ec_hotline>
+                <class>Ec_Hotline_Helper</class>
+            </ec_hotline>
+        </helpers>
+        <blocks>
+            <ec_hotline>
+                <class>Ec_Hotline_Block</class>
+            </ec_hotline>
+        </blocks>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <avatax after="Mage_Adminhtml">Ec_Hotline_Adminhtml</avatax>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
