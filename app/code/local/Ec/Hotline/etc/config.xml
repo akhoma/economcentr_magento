@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @category    Ec
+ * @package     Ec_Hotline
+ */
+-->
+<config>
+    <modules>
+        <Ec_Hotline>
+            <version>1.0.0</version>
+        </Ec_Hotline>
+    </modules>
+    <global>
+        <models>
+            <ec_hotline>
+                <class>Ec_Hotline_Model</class>
+            </ec_hotline>
+        </models>
+    </global>
+</config>

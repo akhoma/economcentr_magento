@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Ec_Hotline>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Ec_Hotline>
+    </modules>
+</config>
