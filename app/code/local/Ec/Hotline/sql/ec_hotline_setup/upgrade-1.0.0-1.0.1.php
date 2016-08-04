@@ -1,6 +1,7 @@
 <?php
-$this->startSetup();
 $setup = Mage::getModel('eav/entity_setup', 'core_setup');
+$setup->startSetup();
+
 $setup->addAttribute('catalog_product', 'hotline_brand', array(
     'group'             => 'General',
     'input'             => 'text',
@@ -36,4 +37,4 @@ $setup->addAttributeToGroup(
     '4'
 );
 
-$this->endSetup();
+$setup->endSetup();
