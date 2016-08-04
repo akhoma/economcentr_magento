@@ -62,7 +62,7 @@ class Ec_Hotline_Model_Product_Export extends Varien_Object
             $dataItem[6] = $product->getPrice();
             $dataItem[7] = '12';
             $dataItem[8] = $product->isSaleable() ? 'в наличии' : 'под заказ';
-            $dataItem[9] = '1';
+            $dataItem[9] = '0';
             $dataItem[10] = $product->getProductUrl();
             $dataItem[11] = Mage::helper('catalog/image')->init($product, 'thumbnail');
             $data[] = $dataItem;
