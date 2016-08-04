@@ -201,7 +201,8 @@ ul.products-grid li.item {
 .economcentr .cart .buttons-set .button:hover,
 .economcentr .cart-table .button:hover,
 .economcentr .sidebar .actions .button:hover,
-.economcentr .button.button-secondary:hover {
+.economcentr .button.button-secondary:hover,
+.economcentr #co-shipping-method-form .buttons-set .button:hover{
     background: #333435;
     color: #FFBF00;
 }
