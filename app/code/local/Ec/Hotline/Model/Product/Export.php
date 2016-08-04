@@ -46,19 +46,22 @@ class Ec_Hotline_Model_Product_Export extends Varien_Object
             ->addAttributeToSelect ('*')
             ->getItems();
 
+        $hotlineDefaultCategory = Mage::helper('ec_hotline')->getHotlineDefaultCategory();
+        $hotlineDefaultBrand = Mage::helper('ec_hotline')->getHotlineDefaultBrand();
+
         $data = array();
         $data[] = $this->_cols;
         foreach($products as $product) {
             $dataItem = array();
-            $dataItem[0] = 'Category';
-            $dataItem[1] = 'Brand';
+            $dataItem[0] = $hotlineDefaultCategory;
+            $dataItem[1] = $hotlineDefaultBrand;
             $dataItem[2] = $product->getName();
             $dataItem[3] = $product->getSku();
             $dataItem[4] = $product->getId();
             $dataItem[5] = $product->getDescription();
             $dataItem[6] = $product->getPrice();
             $dataItem[7] = '12';
-            $dataItem[8] = $product->getIsInStock() ? 'в наличии' : 'под заказ';
+            $dataItem[8] = $product->isSaleable() ? 'в наличии' : 'под заказ';
             $dataItem[9] = '1';
             $dataItem[10] = $product->getProductUrl();
             $dataItem[11] = Mage::helper('catalog/image')->init($product, 'thumbnail');
