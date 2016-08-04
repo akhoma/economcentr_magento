@@ -21,7 +21,7 @@
  * @category   Ec
  * @package    Ec_Hotline
  */
-class Ec_Hotline_Model_Source_HotlineCategories
+class Ec_Hotline_Model_Source_HotlineCategories extends Mage_Eav_Model_Entity_Attribute_Source_Abstract
 {
     protected $_categories = array(
         "Авто и Мото",
@@ -1624,5 +1624,15 @@ class Ec_Hotline_Model_Source_HotlineCategories
         }
 
         return $data;
+    }
+
+    /**
+     * Get list of all available categories
+     *
+     * @return mixed
+     */
+    public function getAllOptions()
+    {
+        return $this->toOptionArray();
     }
 }

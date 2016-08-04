@@ -28,6 +28,13 @@
                 <class>Ec_Hotline_Block</class>
             </ec_hotline>
         </blocks>
+        <resources>
+            <ec_hotline_setup>
+                <setup>
+                    <module>Ec_Hotline</module>
+                </setup>
+            </ec_hotline_setup>
+        </resources>
     </global>
     <admin>
         <routers>

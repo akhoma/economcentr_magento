@@ -53,7 +53,7 @@ class Ec_Hotline_Model_Product_Export extends Varien_Object
         $data[] = $this->_cols;
         foreach($products as $product) {
             $dataItem = array();
-            $dataItem[0] = $hotlineDefaultCategory;
+            $dataItem[0] = $product->getData('hotline_category') ?: $hotlineDefaultCategory;
             $dataItem[1] = $hotlineDefaultBrand;
             $dataItem[2] = $product->getName();
             $dataItem[3] = $product->getSku();
