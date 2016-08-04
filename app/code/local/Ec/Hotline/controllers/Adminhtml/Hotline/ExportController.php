@@ -14,8 +14,8 @@ class Ec_Hotline_Adminhtml_Hotline_ExportController extends Mage_Adminhtml_Contr
      */
     public function productsAction()
     {
-        $exportModel = mage::getModel('ec_hotline/product_export');
-        $fileName = 'hotlineExport.txt';
+        $exportModel = Mage::getModel('ec_hotline/product_export');
+        $fileName = 'hotlineExport.csv';
         $content = $exportModel->getCsvData();;
         $this->_sendResponse($fileName, $content);
         return $this;
