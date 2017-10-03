@@ -1,0 +1,6 @@
+
+    <nav id="nav">
+        <ol class="nav-primary">
+            <li class="level0 nav-1 home"><a href="http://ec.xampp/ua/">Головна</a></li>
+            <li  class="level0 nav-1 first active"><a href="http://ec.xampp/ua/products-catalog.html?___SID=U" class="level0 ">Каталог товарів</a></li><li  class="level0 nav-2"><a href="http://ec.xampp/ua/contacts.html?___SID=U" class="level0 ">Контакти</a></li><li  class="level0 nav-3"><a href="http://ec.xampp/ua/our-location.html?___SID=U" class="level0 ">Ми розташовані</a></li><li  class="level0 nav-4 last"><a href="http://ec.xampp/ua/payment-and-delivery.html?___SID=U" class="level0 ">Оплата і доставка</a></li>        </ol>
+    </nav>

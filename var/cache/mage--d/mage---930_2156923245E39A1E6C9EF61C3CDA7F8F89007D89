@@ -1,0 +1,45 @@
+<p><div id="messages_product_view"></div>
+<form action="/ua/contacts/index/post" id="contactForm" method="post" class="scaffold-form">
+    <div class="fieldset">
+        <h2 class="legend">Контактна інформація</h2>
+        <p class="required">* Обов'язкові поля</p>
+        <ul class="form-list">
+            <li class="fields">
+                <div class="field">
+                    <label for="name" class="required"><em>*</em>Ім&#39;я</label>
+                    <div class="input-box">
+                        <input name="name" id="name" title="Ім&#39;я" value="" class="input-text required-entry" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="email" class="required"><em>*</em>Email</label>
+                    <div class="input-box">
+                        <input name="email" id="email" title="Email" value="" class="input-text required-entry validate-email" type="email" autocapitalize="off" autocorrect="off" spellcheck="false" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <label for="telephone">Телефон</label>
+                <div class="input-box">
+                    <input name="telephone" id="telephone" title="Телефон" value="" class="input-text" type="tel" />
+                </div>
+            </li>
+            <li class="wide">
+                <label for="comment" class="required"><em>*</em>Нотатка</label>
+                <div class="input-box">
+                    <textarea name="comment" id="comment" title="Нотатка" class="required-entry input-text" cols="5" rows="3"></textarea>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="buttons-set">
+        <input type="text" name="hideit" id="hideit" value="" style="display:none !important;" />
+        <button type="submit" title="Надіслати" class="button"><span><span>Надіслати</span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+    var contactForm = new VarienForm('contactForm', true);
+    //]]>
+</script>
+</p>

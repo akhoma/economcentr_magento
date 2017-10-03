@@ -1,0 +1,6 @@
+
+    <nav id="nav">
+        <ol class="nav-primary">
+            <li class="level0 nav-1 home"><a href="http://ec.xampp/ru/">Главная</a></li>
+            <li  class="level0 nav-1 first"><a href="http://ec.xampp/ru/products-catalog.html?___SID=U" class="level0 ">Каталог товаров</a></li><li  class="level0 nav-2"><a href="http://ec.xampp/ru/contacts.html?___SID=U" class="level0 ">Контакты</a></li><li  class="level0 nav-3 active"><a href="http://ec.xampp/ru/our-location.html?___SID=U" class="level0 ">Мы находимся</a></li><li  class="level0 nav-4 last"><a href="http://ec.xampp/ru/payment-and-delivery.html?___SID=U" class="level0 ">Оплата и доставка</a></li>        </ol>
+    </nav>
